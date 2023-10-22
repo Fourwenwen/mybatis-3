@@ -332,6 +332,13 @@
       <version>2.20.0</version>
       <scope>test</scope>
     </dependency>
+    <!--Guava依赖-->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>30.0-jre</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -452,15 +459,15 @@
       </build>
     </profile>
     <profile>
-      <id>16</id>
+      <id>21</id>
       <activation>
         <jdk>[16,)</jdk>
       </activation>
       <properties>
-        <java.version>16</java.version>
-        <java.release.version>16</java.release.version>
-        <java.test.version>16</java.test.version>
-        <java.test.release.version>16</java.test.release.version>
+        <java.version>21</java.version>
+        <java.release.version>21</java.release.version>
+        <java.test.version>21</java.test.version>
+        <java.test.release.version>21</java.test.release.version>
         <excludedGroups>TestcontainersTests,RequireIllegalAccess</excludedGroups>
       </properties>
     </profile>

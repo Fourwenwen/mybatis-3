@@ -13,7 +13,7 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package org.apache.ibatis.submitted.nestedresulthandler_association;
+package org.apache.ibatis.submitted.nestedresulthandler_gh1551.nestedresulthandler_association;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

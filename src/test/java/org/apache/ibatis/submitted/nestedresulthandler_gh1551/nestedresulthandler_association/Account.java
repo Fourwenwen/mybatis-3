@@ -13,14 +13,18 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package org.apache.ibatis.submitted.nestedresulthandler_association;
+package org.apache.ibatis.submitted.nestedresulthandler_gh1551.nestedresulthandler_association;
 
-public class AccountAddress {
+import java.util.Date;
+
+public class Account {
   private String accountUuid;
 
-  private String zipCode;
+  private String accountName;
 
-  private String address;
+  private Date birthDate;
+
+  private AccountAddress address;
 
   public String getAccountUuid() {
     return accountUuid;
@@ -30,19 +34,27 @@ public class AccountAddress {
     this.accountUuid = accountUuid;
   }
 
-  public String getZipCode() {
-    return zipCode;
+  public String getAccountName() {
+    return accountName;
   }
 
-  public void setZipCode(String zipCode) {
-    this.zipCode = zipCode;
+  public void setAccountName(String accountName) {
+    this.accountName = accountName;
   }
 
-  public String getAddress() {
+  public Date getBirthDate() {
+    return birthDate;
+  }
+
+  public void setBirthDate(Date birthDate) {
+    this.birthDate = birthDate;
+  }
+
+  public AccountAddress getAddress() {
     return address;
   }
 
-  public void setAddress(String address) {
+  public void setAddress(AccountAddress address) {
     this.address = address;
   }
 }
